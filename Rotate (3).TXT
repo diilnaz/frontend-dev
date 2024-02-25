@@ -1,0 +1,4 @@
+if (cookie) {
+    let data = cookie.split('/')
+    container_start_h3.innerHTML = `<h3>В прошлый раз вы дали ${data[1]} правильных ответов из ${data[0]}. Точность - ${Math.round(data[1] * 100 / data[0])}%.</h3>`
+}
